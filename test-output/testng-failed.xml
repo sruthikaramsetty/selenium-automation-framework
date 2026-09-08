@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Automation Test Suite]">
-  <test thread-count="5" name="Regression Tests(failed)">
+  <test thread-count="5" name="All Tests(failed)">
     <classes>
-      <class name="tests.GoogleTest">
+      <class name="tests.ProductTest">
         <methods>
-          <include name="googleTitleTest"/>
+          <include name="addProductToCartTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- tests.GoogleTest -->
+      </class> <!-- tests.ProductTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="invalidUsernameTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- Regression Tests(failed) -->
+  </test> <!-- All Tests(failed) -->
 </suite> <!-- Failed suite [Automation Test Suite] -->

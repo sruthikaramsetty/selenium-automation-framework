@@ -34,4 +34,9 @@ public class OrderConfirmationPage {
 
         driver.findElement(goBackHome).click();
     }
+    
+    public boolean isOrderConfirmed() {
+
+        return getConfirmationMessage().equals("Thank you for your order!");
+    }
 }

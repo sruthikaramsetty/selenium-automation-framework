@@ -66,5 +66,12 @@ public class ProductTest extends BaseTest {
         Assert.assertEquals(totalPrice, "Total: $32.39");
 
         overviewPage.clickFinish();
+
+        OrderConfirmationPage confirmationPage = new OrderConfirmationPage(driver);
+
+        Assert.assertTrue(
+                confirmationPage.isOrderConfirmed(),
+                "Order confirmation is not displayed"
+        );
     }
 }

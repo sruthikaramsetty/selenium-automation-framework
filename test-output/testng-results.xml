@@ -1,39 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-02T12:20:04 IST" name="Automation Test Suite" finished-at="2026-09-02T12:20:19 IST" duration-ms="15393">
+  <suite started-at="2026-09-08T11:55:18 IST" name="Automation Test Suite" finished-at="2026-09-08T11:55:58 IST" duration-ms="40459">
     <groups>
     </groups>
-    <test started-at="2026-09-02T12:20:04 IST" name="Regression Tests" finished-at="2026-09-02T12:20:19 IST" duration-ms="15393">
+    <test started-at="2026-09-08T11:55:18 IST" name="All Tests" finished-at="2026-09-08T11:55:58 IST" duration-ms="40459">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4562e04d]" started-at="2026-09-02T12:20:04 IST" name="setUp" finished-at="2026-09-02T12:20:07 IST" duration-ms="2884" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:18 IST" name="setUp" finished-at="2026-09-08T11:55:23 IST" duration-ms="4925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addBackpackToCart()[pri:0, instance:tests.LoginTest@4562e04d]" started-at="2026-09-02T12:20:07 IST" name="addBackpackToCart" finished-at="2026-09-02T12:20:08 IST" duration-ms="1146" status="PASS">
+        <test-method signature="emptyPasswordTest()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:23 IST" name="emptyPasswordTest" finished-at="2026-09-08T11:55:24 IST" duration-ms="754" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addBackpackToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4562e04d]" started-at="2026-09-02T12:20:08 IST" name="tearDown" finished-at="2026-09-02T12:20:11 IST" duration-ms="3372" status="PASS">
+        </test-method> <!-- emptyPasswordTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:24 IST" name="tearDown" finished-at="2026-09-08T11:55:24 IST" duration-ms="751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyPasswordTest status=SUCCESS method=LoginTest.emptyPasswordTest()[pri:0, instance:tests.LoginTest@34a3d150] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:24 IST" name="setUp" finished-at="2026-09-08T11:55:28 IST" duration-ms="3459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptyUsernameTest()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:28 IST" name="emptyUsernameTest" finished-at="2026-09-08T11:55:29 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUsernameTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:29 IST" name="tearDown" finished-at="2026-09-08T11:55:29 IST" duration-ms="950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyUsernameTest status=SUCCESS method=LoginTest.emptyUsernameTest()[pri:0, instance:tests.LoginTest@34a3d150] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:29 IST" name="setUp" finished-at="2026-09-08T11:55:32 IST" duration-ms="2790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPasswordTest()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:32 IST" name="invalidPasswordTest" finished-at="2026-09-08T11:55:33 IST" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:33 IST" name="tearDown" finished-at="2026-09-08T11:55:34 IST" duration-ms="924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidPasswordTest status=SUCCESS method=LoginTest.invalidPasswordTest()[pri:0, instance:tests.LoginTest@34a3d150] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:34 IST" name="setUp" finished-at="2026-09-08T11:55:37 IST" duration-ms="2847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidUsernameTest()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:37 IST" name="invalidUsernameTest" finished-at="2026-09-08T11:55:37 IST" duration-ms="515" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at tests.LoginTest.invalidUsernameTest(LoginTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:37 IST" name="tearDown" finished-at="2026-09-08T11:55:38 IST" duration-ms="1077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUsernameTest status=FAILURE method=LoginTest.invalidUsernameTest()[pri:0, instance:tests.LoginTest@34a3d150] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:38 IST" name="setUp" finished-at="2026-09-08T11:55:41 IST" duration-ms="2547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:41 IST" name="validLoginTest" finished-at="2026-09-08T11:55:41 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@34a3d150]" started-at="2026-09-08T11:55:41 IST" name="tearDown" finished-at="2026-09-08T11:55:42 IST" duration-ms="602" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:tests.LoginTest@34a3d150] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductTest@6c6cb480]" started-at="2026-09-02T12:20:11 IST" name="setUp" finished-at="2026-09-02T12:20:14 IST" duration-ms="2296" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductTest@22555ebf]" started-at="2026-09-08T11:55:42 IST" name="setUp" finished-at="2026-09-08T11:55:44 IST" duration-ms="2399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCartTest()[pri:0, instance:tests.ProductTest@6c6cb480]" started-at="2026-09-02T12:20:14 IST" name="addProductToCartTest" finished-at="2026-09-02T12:20:16 IST" duration-ms="2188" status="PASS">
+        <test-method signature="addProductToCartTest()[pri:0, instance:tests.ProductTest@22555ebf]" started-at="2026-09-08T11:55:44 IST" name="addProductToCartTest" finished-at="2026-09-08T11:55:56 IST" duration-ms="11429" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: first-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.76, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\karam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55161}, goog:processID: 33264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55161/devtoo..., se:cdpVersion: 152.0.7977.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09a833083f5d676818d7df780a747669]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: first-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.76, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\karam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55161}, goog:processID: 33264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55161/devtoo..., se:cdpVersion: 152.0.7977.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09a833083f5d676818d7df780a747669
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.WaitUtility.waitForElementVisible(WaitUtility.java:21)
+at pages.CheckoutPage.enterFirstName(CheckoutPage.java:29)
+at tests.ProductTest.addProductToCartTest(ProductTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCartTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@6c6cb480]" started-at="2026-09-02T12:20:16 IST" name="tearDown" finished-at="2026-09-02T12:20:19 IST" duration-ms="3446" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.ProductTest@22555ebf]" started-at="2026-09-08T11:55:56 IST" name="tearDown" finished-at="2026-09-08T11:55:58 IST" duration-ms="2760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addProductToCartTest status=FAILURE method=ProductTest.addProductToCartTest()[pri:0, instance:tests.ProductTest@22555ebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductTest -->
-    </test> <!-- Regression Tests -->
+    </test> <!-- All Tests -->
   </suite> <!-- Automation Test Suite -->
 </testng-results>

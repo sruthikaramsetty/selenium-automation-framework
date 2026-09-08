@@ -3,29 +3,76 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pages.CartPage;
 import pages.LoginPage;
-import pages.ProductsPage;
 
 public class LoginTest extends BaseTest {
 
     @Test
-    public void addBackpackToCart() {
+    public void validLoginTest() {
 
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
-        loginPage.clickLogin();
+        loginPage.login("standard_user", "secret_sauce");
 
-        ProductsPage productsPage = new ProductsPage(driver);
+        Assert.assertTrue(
+                driver.getCurrentUrl().contains("inventory"),
+                "Login failed"
+        );
+    }
 
-        productsPage.addBackpackToCart();
+    @Test
+    public void invalidUsernameTest() {
 
-        productsPage.clickCart();
+        LoginPage loginPage = new LoginPage(driver);
 
-        CartPage cartPage = new CartPage(driver);
+        loginPage.login("wrong_user", "secret_sauce");
 
-        Assert.assertTrue(cartPage.isBackpackDisplayed());
+        Assert.assertTrue(
+                loginPage.getErrorMessage().contains(
+                        "Username and password do not match"
+                )
+        );
+    }
+
+    @Test
+    public void invalidPasswordTest() {
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.login("standard_user", "wrong_password");
+
+        Assert.assertTrue(
+                loginPage.getErrorMessage().contains(
+                        "Username and password do not match"
+                )
+        );
+    }
+
+    @Test
+    public void emptyUsernameTest() {
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.login("", "secret_sauce");
+
+        Assert.assertTrue(
+                loginPage.getErrorMessage().contains(
+                        "Username is required"
+                )
+        );
+    }
+
+    @Test
+    public void emptyPasswordTest() {
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.login("standard_user", "");
+
+        Assert.assertTrue(
+                loginPage.getErrorMessage().contains(
+                        "Password is required"
+                )
+        );
     }
 }
