@@ -41,6 +41,8 @@ public class ProductTest extends BaseTest {
         cartPage.clickCheckout();
 
         CheckoutPage checkoutPage = new CheckoutPage(driver);
+        System.out.println("Current URL: " + driver.getCurrentUrl());
+        System.out.println("Current Title: " + driver.getTitle());
 
         checkoutPage.enterFirstName("Sruthi");
         checkoutPage.enterLastName("Test");

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Automation_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Automation Test Suite</span>
+              <span class="suite-name border-passed">Automation Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Automation_Test_Suite" class="hide-methods failed suite-Automation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Test_Suite -->
-                      <a href="#" panel-name="suite-Automation_Test_Suite" class="show-methods failed suite-Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Automation_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="addProductToCartTest">addProductToCartTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidUsernameTest">invalidUsernameTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Automation_Test_Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,6 +101,11 @@
                       <a href="#" panel-name="suite-Automation_Test_Suite" class="show-methods passed suite-Automation_Test_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Automation_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="addProductToCartTest">addProductToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="emptyPasswordTest">emptyPasswordTest</a> <!-- method navigator-link -->
@@ -133,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidPasswordTest">invalidPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidUsernameTest">invalidUsernameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,29 +143,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Automation_Test_Suite" class="panel Automation_Test_Suite">
-          <div class="suite-Automation_Test_Suite-class-failed">
+          <div class="suite-Automation_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidUsernameTest">
-                  </a> <!-- invalidUsernameTest -->
-                  <span class="method-name">invalidUsernameTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at tests.LoginTest.invalidUsernameTest(LoginTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Test_Suite-class-failed -->
-          <div class="suite-Automation_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.ProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,24 +154,10 @@
                   <a name="addProductToCartTest">
                   </a> <!-- addProductToCartTest -->
                   <span class="method-name">addProductToCartTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: first-name (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.76, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\karam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55161}, goog:processID: 33264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55161/devtoo..., se:cdpVersion: 152.0.7977.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 09a833083f5d676818d7df780a747669
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.WaitUtility.waitForElementVisible(WaitUtility.java:21)
-	at pages.CheckoutPage.enterFirstName(CheckoutPage.java:29)
-	at tests.ProductTest.addProductToCartTest(ProductTest.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Test_Suite-class-failed -->
+          </div> <!-- suite-Automation_Test_Suite-class-passed -->
           <div class="suite-Automation_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -226,6 +183,13 @@ Session ID: 09a833083f5d676818d7df780a747669
                   <a name="invalidPasswordTest">
                   </a> <!-- invalidPasswordTest -->
                   <span class="method-name">invalidPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidUsernameTest">
+                  </a> <!-- invalidUsernameTest -->
+                  <span class="method-name">invalidUsernameTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -294,32 +258,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addProductToCartTest')
 data.setCell(0, 2, 'tests.ProductTest')
-data.setCell(0, 3, 11429);
+data.setCell(0, 3, 3139);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'emptyPasswordTest')
 data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 754);
+data.setCell(1, 3, 784);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'emptyUsernameTest')
+data.setCell(2, 1, 'invalidPasswordTest')
 data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 597);
+data.setCell(2, 3, 614);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidPasswordTest')
+data.setCell(3, 1, 'invalidUsernameTest')
 data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 535);
+data.setCell(3, 3, 581);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidUsernameTest')
+data.setCell(4, 1, 'validLoginTest')
 data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 515);
+data.setCell(4, 3, 577);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validLoginTest')
+data.setCell(5, 1, 'emptyUsernameTest')
 data.setCell(5, 2, 'tests.LoginTest')
-data.setCell(5, 3, 464);
+data.setCell(5, 3, 558);
 window.suiteTableData['Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Automation_Test_Suite">
               </div> <!-- times-div-Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -352,78 +316,74 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPasswordTest</span>
-                <span class="method-start">4934 ms</span>
+                <span class="method-start">7817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=emptyPasswordTest status=SUCCESS method=LoginTest.emptyPasswordTest()[pri:0, instan...)</span>
-                <span class="method-start">5696 ms</span>
+                <span class="method-start">8612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6450 ms</span>
+                <span class="method-start">9450 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUsernameTest</span>
-                <span class="method-start">9911 ms</span>
+                <span class="method-start">12696 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=emptyUsernameTest status=SUCCESS method=LoginTest.emptyUsernameTest()[pri:0, instan...)</span>
-                <span class="method-start">10508 ms</span>
+                <span class="method-start">13260 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11458 ms</span>
+                <span class="method-start">13984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPasswordTest</span>
-                <span class="method-start">14256 ms</span>
+                <span class="method-start">16821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=invalidPasswordTest status=SUCCESS method=LoginTest.invalidPasswordTest()[pri:0, in...)</span>
-                <span class="method-start">14798 ms</span>
+                <span class="method-start">17443 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15724 ms</span>
+                <span class="method-start">18438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalidUsernameTest</span>
-                <span class="method-start">18571 ms</span>
+                <span class="method-start">21417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=invalidUsernameTest status=FAILURE method=LoginTest.invalidUsernameTest()[pri:0, in...)</span>
-                <span class="method-start">19095 ms</span>
+                <span class="method-name">tearDown([TestResult name=invalidUsernameTest status=SUCCESS method=LoginTest.invalidUsernameTest()[pri:0, in...)</span>
+                <span class="method-start">22001 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20174 ms</span>
+                <span class="method-start">22794 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest</span>
-                <span class="method-start">22721 ms</span>
+                <span class="method-start">25594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTest.validLoginTest()[pri:0, instance:tes...)</span>
-                <span class="method-start">23185 ms</span>
+                <span class="method-start">26176 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23790 ms</span>
+                <span class="method-start">27013 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addProductToCartTest</span>
-                <span class="method-start">26189 ms</span>
+                <span class="method-start">30040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=addProductToCartTest status=FAILURE method=ProductTest.addProductToCartTest()[pri:0...)</span>
-                <span class="method-start">37635 ms</span>
+                <span class="method-name">tearDown([TestResult name=addProductToCartTest status=SUCCESS method=ProductTest.addProductToCartTest()[pri:0...)</span>
+                <span class="method-start">33183 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
