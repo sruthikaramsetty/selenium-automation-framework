@@ -11,9 +11,8 @@ pipeline {
 
     post {
         always {
-            junit 'target/surefire-reports/testng-results.xml'
             archiveArtifacts artifacts: 'target/surefire-reports/emailable-report.html',
-                             allowEmptyArchive: true
+                             allowEmptyArchive: false
 
             echo 'Build completed'
         }
